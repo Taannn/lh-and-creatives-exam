@@ -48,10 +48,10 @@ header {
 }
 
 /* layout */
-.container {
-  max-width: 1400px;
-  width: 90%;
-  margin-inline: auto ;
+header .container {
+  max-width: 1500px;
+  width: 98%;
+  margin-inline: auto;
 }
 
 .flex {
@@ -160,6 +160,9 @@ header {
 
 /* media queries */
 @media (max-width: 540px) {
+  header .container {
+    width: 90%;
+  }
   .header-nav,
   .header-nav-btn {
     display: none;

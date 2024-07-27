@@ -5,12 +5,193 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="assets/icons/logo.svg" type="image/x-icon">
   <title>LH & Creatives</title>
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="assets/components/header/header.css">
+  <link rel="stylesheet" href="assets/components/hero/hero.css">
+  <link rel="stylesheet" href="assets/components/card/card.css">
 </head>
 <body>
+  <!-- html file containing everything combined -->
+  <header>
+    <div class="container flex-between">
+      <div class="flex gap-5">
+        <div class="header-logo">
+          <a href="#hero">
+            <img
+              src="../../../assets/icons/logo.svg"
+              width="120"
+              alt="LH & Creatives"
+            >
+          </a>
+        </div>
+        <nav class="header-nav">
+          <ul class="flex gap-3 text-uppercase text-bold">
+            <li><a href="#about">About</a></li>
+            <li><a href="#service">Service</a></li>
+            <li><a href="#access">Access</a></li>
+            <li><a href="#recruit">Recruit <img src="../../../assets/icons/icon-external.svg" alt="icon external"></a></li>
+          </ul>
+        </nav>
+      </div>
+      <a href="#contact" class="header-nav-btn text-uppercase text-bold">contact</a>
+      <button
+        class="hidden-btn hidden"
+        id="menu" type="button"
+        aria-label="menu"
+        aria-hidden="true">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+    <!-- mobile nav -->
+    <nav class="header-mobile hidden" aria-hidden="true">
+      <ul class="flex-col gap-5 text-uppercase text-bold">
+        <li><a href="#about">About</a></li>
+        <li><a href="#service">Service</a></li>
+        <li><a href="#access">Access</a></li>
+        <li><a href="#recruit">Recruit <img src="../../../assets/icons/icon-external.svg" alt="icon external"></a></li>
+        <li><a href="#contact" class="header-mobile-btn text-uppercase text-bold">contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <main>
+    <!-- hero -->
+    <section id="hero">
+      <div class="hero">
+        <h1>Hero Text</h1>
+        <p>Sub Hero Text Sentence</p>
+      </div>
+    </section>
+    <!-- card -->
+    <section id="card">
+      <div class="container">
+        <h1>Card</h1>
+        <h2>4 column card on PC</h2>
+        <div class="four-block">
+          <!-- card one -->
+          <div class="card">
+            <picture class="card-img">
+              <source
+                srcset="assets/images/card-4col-img1@2x.png"
+                media="(max-width: 540px)"
+              />
+              <source
+                srcset="assets/images/card-4col-img1.png"
+                media="(min-width: 541px)"
+              />
+              <img src="assets/images/card-4col-img1.png"/>
+            </picture>
+            <h3>Card Title</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum.</p>
+          </div>
+          <!-- card two -->
+          <div class="card">
+            <picture class="card-img">
+              <source
+                srcset="assets/images/card-4col-img2@2x.png"
+                media="(max-width: 540px)"
+              />
+              <source
+                srcset="assets/images/card-4col-img2.png"
+                media="(min-width: 541px)"
+              />
+              <img src="assets/images/card-4col-img2.png"/>
+            </picture>
+            <h3>Card Title</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum.</p>
+          </div>
+          <!-- card three -->
+          <div class="card">
+            <picture class="card-img">
+              <source
+                srcset="assets/images/card-4col-img3@2x.png"
+                media="(max-width: 540px)"
+              />
+              <source
+                srcset="assets/images/card-4col-img3.png"
+                media="(min-width: 541px)"
+              />
+              <img src="assets/images/card-4col-img3.png"/>
+            </picture>
+            <h3>Card Title</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum.</p>
+          </div>
+          <!-- card four -->
+          <div class="card">
+            <picture class="card-img">
+              <source
+                srcset="assets/images/card-4col-img4@2x.png"
+                media="(max-width: 540px)"
+              />
+              <source
+                srcset="assets/images/card-4col-img4.png"
+                media="(min-width: 541px)"
+              />
+              <img src="assets/images/card-4col-img4.png"/>
+            </picture>
+            <h3>Card Title</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum.</p>
+          </div>
+        </div>
+        <!-- three block -->
+        <h2>3 column card on PC</h2>
+        <div class="three-block">
+          <!-- card one -->
+          <div class="card">
+            <picture class="card-img">
+              <source
+                srcset="assets/images/card-3col-img1@2x.png"
+                media="(max-width: 540px)"
+              />
+              <source
+                srcset="assets/images/card-3col-img1.png"
+                media="(min-width: 541px)"
+              />
+              <img src="assets/images/card-3col-img1.png"/>
+            </picture>
+            <h3>Card Title</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum.</p>
+          </div>
+          <!-- card two -->
+          <div class="card">
+            <picture class="card-img">
+              <source
+                srcset="assets/images/card-3col-img2@2x.png"
+                media="(max-width: 540px)"
+              />
+              <source
+                srcset="assets/images/card-3col-img2.png"
+                media="(min-width: 541px)"
+              />
+              <img src="assets/images/card-3col-img2.png"/>
+            </picture>
+            <h3>Card Title</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum.</p>
+          </div>
+          <!-- card three -->
+          <div class="card">
+            <picture class="card-img">
+              <source
+                srcset="assets/images/card-3col-img3@2x.png"
+                media="(max-width: 540px)"
+              />
+              <source
+                srcset="assets/images/card-3col-img3.png"
+                media="(min-width: 541px)"
+              />
+              <img src="assets/images/card-3col-img3.png"/>
+            </picture>
+            <h3>Card Title</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum.</p>
+          </div>
+         </div>
+      </div>
+    </section>
+  </main>
+
+  <footer></footer>
 
   <!-- scripts -->
-  <script src="main.js"></script>
+  <script src="https://kit.fontawesome.com/0aec4264dc.js" crossorigin="anonymous"></script>
+  <script src="assets/components/header/header.js"></script>
 </body>
 </html>
