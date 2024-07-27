@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  --ff-main: "Roboto", sans-serif;
+
+  --white: #FFFFFF;
+  --yellow: #FFff00;
+  --dark-grey: #333333;
+  --purple: #E3007F;
+}
+
+/* css reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ff-main);
+}
+
+image {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  font: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--dark-grey);
+}
+
+/* general styles */
+header {
+  background-color: var(--yellow);
+  padding: 0.4rem 0;
+  position: fixed;
+  width: 100%;
+}
+
+/* layout */
+.container {
+  max-width: 1400px;
+  width: 90%;
+  margin-inline: auto ;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* spaces */
+.gap-1 {
+  gap: 0.4rem;
+}
+.gap-2 {
+  gap: 0.8rem;
+}
+.gap-3 {
+  gap: 1.2rem;
+}
+.gap-4 {
+  gap: 1.8rem;
+}
+.gap-5 {
+  gap: 3rem;
+}
+
+/* typography */
+.text-uppercase {
+  text-transform: uppercase;
+}
+.text-bold {
+  font-weight: 600;
+}
+
+/* custom */
+.header-nav {
+  position: relative;
+}
+.header-nav-btn {
+  background-color: var(--purple);
+  padding: 0.6rem 2rem;
+  color: var(--white);
+  border-radius: 0.2rem;
+}
+
+.header-mobile-btn {
+  background-color: var(--purple);
+  text-align: center;
+  padding: 0.6rem 1rem;
+  display: block;
+  color: var(--white);
+  border-radius: 0.2rem;
+}
+.header-mobile ul > * {
+  width: 90%;
+  text-align: center;
+}
+
+.header-nav img {
+  margin-left: 0.2rem;
+  width: 0.76rem;
+}
+
+.header-nav li {
+  padding: 0.4rem 0;
+}
+
+.header-nav li:hover {
+  border-bottom: 4px solid var(--dark-grey);
+}
+
+.hidden-btn {
+  background-color: var(--yellow);
+  border: none;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.header-mobile {
+  position: absolute;
+  width: 100%;
+  background-color: var(--yellow);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.show {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+/* media queries */
+@media (max-width: 540px) {
+  .header-nav,
+  .header-nav-btn {
+    display: none;
+  }
+  .hidden-btn {
+    display: block;
+  }
+  .header-mobile li {
+    align-items: flex-start;
+    padding-top: 2rem;
+    transition: transform 0.1s ease;
+  }
+  .header-mobile li:hover {
+    transform: scale(1.1);
+  }
+  .header-mobile li a {
+    font-size: 1.6rem;
+  }
+  .header-mobile img {
+    margin-left: 0.2rem;
+    width: 1.2rem;
+  }
+}
