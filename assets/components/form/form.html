@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <link rel="shortcut icon" href="../../icons/logo.svg" type="image/x-icon">
+  <link rel="stylesheet" href="form.css">
+</head>
+<body>
+  <section id="form">
+    <div class="container">
+      <h1>Form</h1>
+      <form>
+        <!-- name -->
+        <div class="four-block">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" id="name" class="form-input">
+        </div>
+        <!-- company -->
+        <div class="four-block">
+          <label for="company" class="form-label">Company</label>
+          <input type="text" id="company" class="form-input">
+        </div>
+        <!-- email -->
+        <div class="four-block">
+          <label for="email" class="form-label">Email</label>
+          <input type="text" id="email" class="form-input">
+        </div>
+        <!-- select field -->
+        <div class="four-block">
+          <label for="select" class="form-label">Select Field</label>
+          <select id="select" class="form-select">
+            <option value=""></option>
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+          </select>
+        </div>
+        <!-- radio field -->
+        <fieldset>
+          <div class="four-block">
+            <legend class="form-label">Radio Field</legend>
+            <div class="flex-between">
+              <input
+                type="radio"
+                name="radio-selections"
+                value="radio-selection1"
+                id="radio1"
+                class="form-radio"
+                checked>
+                Selection 1
+              <input
+                type="radio"
+                name="radio-selections"
+                value="radio-selection2"
+                id="radio2"
+                class="form-radio">
+                Selection 2
+            </div>
+            <div class="flex-between">
+              <input
+                type="radio"
+                name="radio-selections"
+                value="radio-selection3"
+                id="radio3"
+                class="form-radio">
+                Selection 3
+              <input
+                type="radio"
+                name="radio-selections"
+                value="radio-selection4"
+                id="radio4"
+                class="form-radio">
+                Selection 4
+            </div>
+          </div>
+        </fieldset>
+        <!-- checkbox field -->
+        <fieldset>
+          <div class="four-block">
+            <legend class="form-label">Checkbox Field</legend>
+            <div class="flex-between">
+              <input
+                type="checkbox"
+                name="checkbox-selections"
+                value="checkbox-selection1"
+                id="checkbox1"
+                class="form-checkbox"
+                checked>
+                Selection 1
+              <input
+                type="checkbox"
+                name="checkbox-selections"
+                value="checkbox-selection2"
+                id="checkbox2"
+                class="form-checkbox"
+                checked>
+                Selection 2
+            </div>
+            <div class="flex-between">
+              <input
+                type="checkbox"
+                name="checkbox-selections"
+                value="checkbox-selection3"
+                id="checkbox3"
+                class="form-checkbox">
+                Selection 3
+              <input
+                type="checkbox"
+                name="checkbox-selections"
+                value="checkbox-selection4"
+                id="checkbox4"
+                class="form-checkbox">
+                Selection 4
+            </div>
+          </div>
+        </fieldset>
+        <div class="full-width">
+          <button type="submit" class="form-btn">Submit</button>
+        </div>
+      </form>
+    </div>
+  </section>
+</body>
+</html>
