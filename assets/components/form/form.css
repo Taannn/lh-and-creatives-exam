@@ -114,7 +114,7 @@ fieldset:last-child {
     margin-right: unset;
   }
 
-  .flex-between {
+  #form .flex-between {
     justify-content: unset;
   }
 

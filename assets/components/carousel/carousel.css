@@ -51,6 +51,9 @@ image {
 }
 
 /* custom styles */
+.carousel.container-full {
+  overflow: hidden;
+}
 .carousel.container {
   padding: 3rem 0;
 }
@@ -81,7 +84,7 @@ image {
 .carousel-prev {
   background-color: var(--white);
   border-radius: 50%;
-  border: 1px solid var(--light-grey);
+  border: 1px solid var(--dark-grey);
   padding: 0.3rem 0.5rem;
   cursor: pointer;
 }
@@ -129,6 +132,6 @@ image {
 
   .carousel-next,
   .carousel-prev {
-  padding: 0.6rem 0.8rem;
-}
+    padding: 0.6rem 0.8rem;
+  }
 }

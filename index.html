@@ -7,13 +7,14 @@
   <title>LH & Creatives</title>
   <link rel="stylesheet" href="assets/components/header/header.css">
   <link rel="stylesheet" href="assets/components/hero/hero.css">
+  <link rel="stylesheet" href="assets/components/carousel/carousel.css">
   <link rel="stylesheet" href="assets/components/card/card.css">
   <link rel="stylesheet" href="assets/components/section/section.css">
+  <link rel="stylesheet" href="assets/components/accordion/accordion.css">
   <link rel="stylesheet" href="assets/components/form/form.css">
 </head>
 <body>
-  <!-- html file containing everything combined, each components are stored inside assets directory -->
-  <!-- attempts to make this combined webpage shorter through js will be implemented once eveything is finished -->
+  <!-- root html file containing everything combined, each individual components are stored inside assets directory :) -->
   <header>
     <div class="container flex-between">
       <div class="flex gap-5">
@@ -57,139 +58,23 @@
   </header>
 
   <main>
-    <!-- hero -->
     <section id="hero">
       <div class="hero">
         <h1>Hero Text</h1>
         <p>Sub Hero Text Sentence</p>
       </div>
     </section>
-    <!-- card -->
-    <section id="card">
-      <div class="container">
-        <h1>Card</h1>
-        <h2>4 column card on PC</h2>
-        <div class="four-block">
-          <!-- card one -->
-          <div class="card">
-            <picture class="card-img">
-              <source
-                srcset="assets/images/card-4col-img1@2x.png"
-                media="(max-width: 540px)"
-              >
-              <source
-                srcset="assets/images/card-4col-img1.png"
-                media="(min-width: 541px)"
-              >
-              <img src="assets/images/card-4col-img1.png" alt="card col4 img1">
-            </picture>
-            <h3>Card Title</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum.</p>
-          </div>
-          <!-- card two -->
-          <div class="card">
-            <picture class="card-img">
-              <source
-                srcset="assets/images/card-4col-img2@2x.png"
-                media="(max-width: 540px)"
-              >
-              <source
-                srcset="assets/images/card-4col-img2.png"
-                media="(min-width: 541px)"
-              >
-              <img src="assets/images/card-4col-img2.png" alt="card col4 img2">
-            </picture>
-            <h3>Card Title</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum.</p>
-          </div>
-          <!-- card three -->
-          <div class="card">
-            <picture class="card-img">
-              <source
-                srcset="assets/images/card-4col-img3@2x.png"
-                media="(max-width: 540px)"
-              >
-              <source
-                srcset="assets/images/card-4col-img3.png"
-                media="(min-width: 541px)"
-              >
-              <img src="assets/images/card-4col-img3.png" alt="card col4 img3">
-            </picture>
-            <h3>Card Title</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum.</p>
-          </div>
-          <!-- card four -->
-          <div class="card">
-            <picture class="card-img">
-              <source
-                srcset="assets/images/card-4col-img4@2x.png"
-                media="(max-width: 540px)"
-              >
-              <source
-                srcset="assets/images/card-4col-img4.png"
-                media="(min-width: 541px)"
-              >
-              <img src="assets/images/card-4col-img4.png" alt="card col4 img4">
-            </picture>
-            <h3>Card Title</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum.</p>
-          </div>
-        </div>
-        <!-- three block -->
-        <h2>3 column card on PC</h2>
-        <div class="three-block">
-          <!-- card one -->
-          <div class="card">
-            <picture class="card-img">
-              <source
-                srcset="assets/images/card-3col-img1@2x.png"
-                media="(max-width: 540px)"
-              >
-              <source
-                srcset="assets/images/card-3col-img1.png"
-                media="(min-width: 541px)"
-              >
-              <img src="assets/images/card-3col-img1.png" alt="card col3 img1">
-            </picture>
-            <h3>Card Title</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum.</p>
-          </div>
-          <!-- card two -->
-          <div class="card">
-            <picture class="card-img">
-              <source
-                srcset="assets/images/card-3col-img2@2x.png"
-                media="(max-width: 540px)"
-              >
-              <source
-                srcset="assets/images/card-3col-img2.png"
-                media="(min-width: 541px)"
-              >
-              <img src="assets/images/card-3col-img2.png" alt="card col3 img2">
-            </picture>
-            <h3>Card Title</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum.</p>
-          </div>
-          <!-- card three -->
-          <div class="card">
-            <picture class="card-img">
-              <source
-                srcset="assets/images/card-3col-img3@2x.png"
-                media="(max-width: 540px)"
-              >
-              <source
-                srcset="assets/images/card-3col-img3.png"
-                media="(min-width: 541px)"
-              >
-              <img src="assets/images/card-3col-img3.png" alt="card col3 img3">
-            </picture>
-            <h3>Card Title</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum.</p>
-          </div>
-         </div>
+    <section id="carousel">
+      <div class="carousel container">
+        <h1>Carousel</h1>
+      </div>
+      <div class="carousel container-full" id="carousel-container"></div>
+      <div class="container relative">
+        <button class="carousel-prev"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="carousel-next"><i class="fa-solid fa-chevron-right"></i></button>
       </div>
     </section>
-    <!-- section -->
+    <section id="card"></section>
     <section id="section">
       <div class="container">
         <h1>Section</h1>
@@ -233,121 +118,13 @@
         </div>
       </div>
     </section>
-    <!-- form -->
-    <section id="form">
+    <section id="accordion">
       <div class="container">
-        <h1>Form</h1>
-        <form>
-          <!-- name -->
-          <div class="four-block">
-            <label for="name" class="form-label">Name</label>
-            <input type="text" id="name" class="form-input">
-          </div>
-          <!-- company -->
-          <div class="four-block">
-            <label for="company" class="form-label">Company</label>
-            <input type="text" id="company" class="form-input">
-          </div>
-          <!-- email -->
-          <div class="four-block">
-            <label for="email" class="form-label">Email</label>
-            <input type="text" id="email" class="form-input">
-          </div>
-          <!-- select field -->
-          <div class="four-block">
-            <label for="select" class="form-label">Select Field</label>
-            <select id="select" class="form-select">
-              <option value=""></option>
-              <option value="option1">Option 1</option>
-              <option value="option2">Option 2</option>
-              <option value="option3">Option 3</option>
-            </select>
-          </div>
-          <!-- radio field -->
-          <fieldset>
-            <div class="four-block">
-              <legend class="form-label">Radio Field</legend>
-              <div class="flex-between">
-                <input
-                  type="radio"
-                  name="radio-selections"
-                  value="radio-selection1"
-                  id="radio1"
-                  class="form-radio"
-                  checked>
-                  Selection 1
-                <input
-                  type="radio"
-                  name="radio-selections"
-                  value="radio-selection2"
-                  id="radio2"
-                  class="form-radio">
-                  Selection 2
-              </div>
-              <div class="flex-between">
-                <input
-                  type="radio"
-                  name="radio-selections"
-                  value="radio-selection3"
-                  id="radio3"
-                  class="form-radio">
-                  Selection 3
-                <input
-                  type="radio"
-                  name="radio-selections"
-                  value="radio-selection4"
-                  id="radio4"
-                  class="form-radio">
-                  Selection 4
-              </div>
-            </div>
-          </fieldset>
-          <!-- checkbox field -->
-          <fieldset>
-            <div class="four-block">
-              <legend class="form-label">Checkbox Field</legend>
-              <div class="flex-between">
-                <input
-                  type="checkbox"
-                  name="checkbox-selections"
-                  value="checkbox-selection1"
-                  id="checkbox1"
-                  class="form-checkbox"
-                  checked>
-                  Selection 1
-                <input
-                  type="checkbox"
-                  name="checkbox-selections"
-                  value="checkbox-selection2"
-                  id="checkbox2"
-                  class="form-checkbox"
-                  checked>
-                  Selection 2
-              </div>
-              <div class="flex-between">
-                <input
-                  type="checkbox"
-                  name="checkbox-selections"
-                  value="checkbox-selection3"
-                  id="checkbox3"
-                  class="form-checkbox">
-                  Selection 3
-                <input
-                  type="checkbox"
-                  name="checkbox-selections"
-                  value="checkbox-selection4"
-                  id="checkbox4"
-                  class="form-checkbox">
-                  Selection 4
-              </div>
-            </div>
-          </fieldset>
-          <div class="full-width">
-            <button type="submit" class="form-btn">Submit</button>
-          </div>
-        </form>
+        <h1>Accordion</h1>
+        <div class="accordion"></div>
       </div>
     </section>
+    <section id="form"></section>
   </main>
 
   <footer>
@@ -356,6 +133,8 @@
 
   <!-- scripts -->
   <script src="https://kit.fontawesome.com/0aec4264dc.js" crossorigin="anonymous"></script>
-  <script src="assets/components/header/header.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="index.js"></script>
+  <script src="assets/components/form/form.js"></script>
 </body>
 </html>
