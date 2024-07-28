@@ -16,6 +16,12 @@ Github Repo Link: [repo link](https://github.com/Taannn/lh-and-creatives-exam)
 ### Hero SP (SCreenshot)
 ![ss](./assets/images/Hero-SP.png)
 
+### Carousel PC (SCreenshot)
+![ss](./assets/images/Carousel-PC.png)
+
+### Carousel SP (SCreenshot)
+![ss](./assets/images/Carousel-SP.png)
+
 ### Card PC (SCreenshot)
 ![ss](./assets/images/Card-PC.png)
 
