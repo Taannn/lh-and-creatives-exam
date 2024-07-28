@@ -31,7 +31,7 @@ $(document).ready(function() {
   imageGroups.forEach(group => {
     const slide = $('<div class="six-block carousel-slide"></div>');
     group.forEach(src => {
-      const imgDiv = $('<div></div>').append(`<img src="${src}" alt="">`);
+      const imgDiv = $('<div></div>').append(`<img src="${src}" alt="carousel image" title="carousel image">`);
       slide.append(imgDiv);
     });
     carouselContainer.append(slide);
