@@ -40,8 +40,11 @@ $(document).ready(function() {
     accordionContainer.append(accordionItem);
   });
 
+  // isng the this, we're able to select only the accordion-header that was clicked instead of all of them at once,
+  // next() method selects the next sibling which is accordion-content
+  // the next code block is the toggle for changing the accordion arrow
   $('.accordion-header').on('click', function() {
-    $(this).next('.accordion-content').slideToggle();
+    $(this).next('.accordion-content').fadeToggle();
 
     let img = $(this).find('img');
     let src = img.attr('src') === '../../icons/accordion-arrow-up-pc.svg' ? '../../icons/accordion-arrow-down-pc.svg' : '../../icons/accordion-arrow-up-pc.svg';
