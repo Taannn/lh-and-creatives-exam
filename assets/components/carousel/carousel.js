@@ -42,6 +42,13 @@ $(document).ready(function() {
   const slides = $('.carousel-slide');
   const totalSlides = slides.length;
 
+  // how it works sliding into next index/image
+  // if you have 4 slides, then you have 0, 1, 2, and 3 since it's index-format
+  // eq() returns the element in an array corresponding to the index passed onto it as argument.
+  // so 0 at slide 1, next then 0 + 1 = 1, 1 % 4 = 0, remainder = 1 - (4 * 0) = 1
+  // cool tip: if the dividend on modulus operation is smaller the divisor, the remainder/asnwer is always the same as dividend. Ex. 5 % 7 = 5, 4 % 9 = 4 :)
+  // if we reach 4 % 4 = 0, then we simply return to slide 1
+
   $('.carousel-next').on('click', function() {
     slides.eq(currentSlide).removeClass('active');
     currentSlide = (currentSlide + 1) % totalSlides;
